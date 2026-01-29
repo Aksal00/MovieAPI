@@ -1,4 +1,4 @@
-# MovieAPI Web API
+# MovieAPI
 
 This is an **ASP.NET Core C# Web API** that fetches Spider-Man movie data from the **OMDb public API**, stores it in a **MS SQL Server database**, and exposes it via RESTful endpoints. The API implements **local caching**: if data is already in the database, it will be returned from there; otherwise, it fetches from OMDb, saves it, and returns it.
 
