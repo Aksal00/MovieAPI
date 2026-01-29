@@ -22,8 +22,10 @@ namespace MovieAPI.Services
             if (existing.Any())
                 return existing;
 
+            // Read API key from environment variable
+            var apiKey = Environment.GetEnvironmentVariable("OMDB_API_KEY")
+                         ?? throw new Exception("OMDb API key not set");
 
-            var apiKey = _config["OMDb:ApiKey"];
             var url = $"https://www.omdbapi.com/?s=spider-man&apikey={apiKey}";
 
 

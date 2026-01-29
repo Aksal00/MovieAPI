@@ -1,6 +1,13 @@
 @MovieAPI_HostAddress = http://localhost:5092
 
-GET {{MovieAPI_HostAddress}}/weatherforecast/
+### Get all Spider-Man movies
+GET {{MovieAPI_HostAddress}}/api/movies
+Accept: application/json
+
+###
+
+### Get movie by IMDb ID
+GET {{MovieAPI_HostAddress}}/api/movies/tt0145487
 Accept: application/json
 
 ###
